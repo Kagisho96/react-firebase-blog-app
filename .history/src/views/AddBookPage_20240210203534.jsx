@@ -1,3 +1,4 @@
+import Header from "../components/Header.jsx";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { addBook } from "../store/booksSlice.js";
@@ -20,13 +21,15 @@ function AddBookPage() {
 
         if (newBook.title && newBook.cover && newBook.author) {
             dispatch(addBook(newBook));
-            alert('Blog created successfully!');
+            alert('Book created successfully!');
             navigate("/");
         } else {
             alert('Please fill the mandatory fields.');
         }
 
     }
+    
+    const pageTitle = "Add Book";
 
     return (
       <>
@@ -57,7 +60,7 @@ function AddBookPage() {
                     type="text" name="synopsis" placeholder="Add a synopsis..." />
                 </div>
                 
-                <button onClick={(e)=> handleAddBook(e)} className="btn btn-block">Save Blog</button>
+                <button onClick={(e)=> handleAddBook(e)} className="btn btn-block">Save Book</button>
             </form>
 
         </div>

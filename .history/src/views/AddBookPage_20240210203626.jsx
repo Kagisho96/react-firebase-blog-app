@@ -1,3 +1,4 @@
+import Header from "../components/Header.jsx";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { addBook } from "../store/booksSlice.js";
@@ -20,17 +21,20 @@ function AddBookPage() {
 
         if (newBook.title && newBook.cover && newBook.author) {
             dispatch(addBook(newBook));
-            alert('Blog created successfully!');
+            alert('Book created successfully!');
             navigate("/");
         } else {
             alert('Please fill the mandatory fields.');
         }
 
     }
+    
+    const pageTitle = "Add Book";
 
     return (
       <>
         <div className="container">
+            <Header/>
 
             <form className="add-form">
             <p className="text-xl uppercase mt-6 mb-5 font-semibold text-center">

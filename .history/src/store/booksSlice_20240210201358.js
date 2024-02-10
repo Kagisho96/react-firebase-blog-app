@@ -8,8 +8,8 @@ export const booksSlice = createSlice({
       title: "Making wearable medical devices more patient-friendly with Professor Esther Rodriguez-Villegas from Acurablebabe ",
       cover: 	"https://techcrunch.com/wp-content/uploads/2022/05/found-2022-featured.jpg?w=430&h=230&crop=1",
       isRead: true,
-      author: "Darrell Etherington",
-      synopsis: "Welcome back to Found, where we get the stories behind the startups. This week, our old friend Darrell Etherington joins Becca Szkutak to talk with Professor Esther Rodriguez-Villegas from Acurable..."
+      author: "Simon Jenkins",
+      synopsis: "In this dazzling new history, bestselling author Simon Jenkins grippingly tells the story of its evolution from warring peoples to peace, wealth and freedom - a story that twists and turns from Greece and Rome, through the Dark Ages, the Reformation and the French Revolution, to the Second World War and up to the present day."
     },
     {
       id: 2,

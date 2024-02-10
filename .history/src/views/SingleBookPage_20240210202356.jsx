@@ -52,7 +52,7 @@ function SingleBookPage() {
                         <label>{ book.isRead ? "Already Read It" : "Haven't Read it yet" }</label>
                     </div>
                     <div onClick={()=>handleEraseBook(book.id)} className="erase-book">
-                        Delete Blog
+                        Erase book
                     </div>
                 </div>
               </div>
@@ -63,7 +63,7 @@ function SingleBookPage() {
             : 
             
             <div>
-              <p>Blog not found. Click the button above to go back to the list of blogs.</p>
+              <p>Book not found. Click the button above to go back to the list of books.</p>
             </div>
 
             }

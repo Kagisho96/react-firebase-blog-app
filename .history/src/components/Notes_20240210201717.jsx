@@ -36,14 +36,14 @@ function Notes({bookId}) {
 
         <div className="notes-wrapper">
 
-            <h2>Comments Below</h2>
+            <h2>Reader's Notes</h2>
 
             {notes.length ?
 
               <div className="notes">
               {notes.map(note => 
                   <div key={note.id} className="note">
-                      <div onClick={()=>handleEraseNote(note.id)} className="erase-note">Delete Blog</div>
+                      <div onClick={()=>handleEraseNote(note.id)} className="erase-note">Erase note</div>
                       <h3>{note.title}</h3>
                       <p>{note.text}</p>
                   </div>
@@ -52,23 +52,23 @@ function Notes({bookId}) {
 
               :
 
-              <p>This blog does not have notes yet. Use the form below to comment.</p>
+              <p>This blog doesn't have notes yet. Use the form below to add a note.</p>
             }
             
 
             <details>
-                <summary>Add a comment</summary>
+                <summary>Add a note</summary>
                 <form className="add-note">
                     <div className="form-control">
-                        <label>About *</label>
+                        <label>Title *</label>
                         <input type="text" name="title" placeholder="Add a note title" />
                     </div>
                     <div className="form-control">
-                        <label>Comment *</label>
+                        <label>Note *</label>
                         <textarea type="text" name="note" placeholder="Add note" />
                     </div>
                     
-                    <button onClick={(e)=>{handleAddNote(e)}}className="btn btn-block">Add Comment</button>
+                    <button onClick={(e)=>{handleAddNote(e)}}className="btn btn-block">Add Note</button>
                 </form>
             </details>
 

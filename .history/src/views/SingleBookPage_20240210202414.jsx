@@ -63,7 +63,7 @@ function SingleBookPage() {
             : 
             
             <div>
-              <p>Blog not found. Click the button above to go back to the list of blogs.</p>
+              <p>Book not found. Click the button above to go back to the list of books.</p>
             </div>
 
             }

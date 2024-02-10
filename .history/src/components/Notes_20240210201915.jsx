@@ -36,7 +36,7 @@ function Notes({bookId}) {
 
         <div className="notes-wrapper">
 
-            <h2>Comments Below</h2>
+            <h2></h2>
 
             {notes.length ?
 

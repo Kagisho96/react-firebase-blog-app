@@ -1,3 +1,4 @@
+import Header from "../components/Header.jsx";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { addBook } from "../store/booksSlice.js";
@@ -20,13 +21,15 @@ function AddBookPage() {
 
         if (newBook.title && newBook.cover && newBook.author) {
             dispatch(addBook(newBook));
-            alert('Blog created successfully!');
+            alert('Book created successfully!');
             navigate("/");
         } else {
             alert('Please fill the mandatory fields.');
         }
 
     }
+    
+    const pageTitle = "Add Book";
 
     return (
       <>
@@ -34,21 +37,21 @@ function AddBookPage() {
 
             <form className="add-form">
             <p className="text-xl uppercase mt-6 mb-5 font-semibold text-center">
-              Add new Blog
+              Add 
             </p>
-                <div className="">
-                    <label>Title:</label>
-                    <input type="text" name="title" placeholder="blog title" />
+                <div className="form-control">
+                    <label>Title *</label>
+                    <input type="text" name="title" placeholder="Add Book Title" />
                 </div>
-                <div className="">
-                    <label>Blog Image:</label>
-                    <input type="text" name="cover" placeholder="link of the image" className="w-full border rounded-md border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium outline-none focus:shadow-md focus:border-[#6a64f1] text-[#6B7280]"/>
+                <div className="form-control">
+                    <label>Book Cover *</label>
+                    <input type="text" name="cover" placeholder="Add Cover" />
                 </div>
 
                 <div className="form-control">
-                <label>Author</label>
+                <label>Author *</label>
                 <input
-                    type="text" name="author" placeholder="name of the author" className="w-full border rounded-md border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium outline-none focus:shadow-md focus:border-[#6a64f1] text-[#6B7280]"/>
+                    type="text" name="author" placeholder="Add Author" />
                 </div>
 
                 <div className="form-control">
@@ -57,7 +60,7 @@ function AddBookPage() {
                     type="text" name="synopsis" placeholder="Add a synopsis..." />
                 </div>
                 
-                <button onClick={(e)=> handleAddBook(e)} className="btn btn-block">Save Blog</button>
+                <button onClick={(e)=> handleAddBook(e)} className="btn btn-block">Save Book</button>
             </form>
 
         </div>

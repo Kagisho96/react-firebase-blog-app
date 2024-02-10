@@ -42,9 +42,9 @@ function Header({ pageTitle }) {
           </p>
 
           <div className="text-white lg:flex gap-6 items-center mr-8 hidden">
-            <div className="">
+            <div className="text-white hover:text-orange-400">
               <NavLink to="/add-book">
-                <button className="bg-orange-400 hover:bg-gray-200 py-2 px-4 text-gray-100 hover:text-gray-900 rounded-md font-medium transition-all duration-200 ease-in">Add Blog</button>
+                <button className="btn">Add Book +</button>
               </NavLink>
             </div>
             <button

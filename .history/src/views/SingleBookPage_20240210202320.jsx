@@ -27,7 +27,7 @@ function SingleBookPage() {
       <>
         <div className="container">
             <Link to="/">
-              <button className="bg-orange-400 hover:bg-gray-200 py-2 px-4 text-gray-100 hover:text-gray-900 rounded-md font-medium transition-all duration-200 ease-in">
+              <button className="btn">
                   ← Back 
               </button>
             </Link>
@@ -52,7 +52,7 @@ function SingleBookPage() {
                         <label>{ book.isRead ? "Already Read It" : "Haven't Read it yet" }</label>
                     </div>
                     <div onClick={()=>handleEraseBook(book.id)} className="erase-book">
-                        Delete Blog
+                        Erase book
                     </div>
                 </div>
               </div>
@@ -63,7 +63,7 @@ function SingleBookPage() {
             : 
             
             <div>
-              <p>Blog not found. Click the button above to go back to the list of blogs.</p>
+              <p>Book not found. Click the button above to go back to the list of books.</p>
             </div>
 
             }

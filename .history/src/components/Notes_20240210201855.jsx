@@ -36,14 +36,14 @@ function Notes({bookId}) {
 
         <div className="notes-wrapper">
 
-            <h2>Comments Below</h2>
+            <h2>Reader's Notes</h2>
 
             {notes.length ?
 
               <div className="notes">
               {notes.map(note => 
                   <div key={note.id} className="note">
-                      <div onClick={()=>handleEraseNote(note.id)} className="erase-note">Delete Blog</div>
+                      <div onClick={()=>handleEraseNote(note.id)} className="erase-note">Delete Post</div>
                       <h3>{note.title}</h3>
                       <p>{note.text}</p>
                   </div>
