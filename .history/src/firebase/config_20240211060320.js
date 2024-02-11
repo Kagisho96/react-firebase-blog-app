@@ -2,7 +2,7 @@ import dotenv from "dotenv";
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
-// dotenv.config({ path: '../' }); // Adjust the path as needed
+dotenv.config({ path: '../' }); // Adjust the path as needed
 // Import the functions you need from the SDKs you need
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
