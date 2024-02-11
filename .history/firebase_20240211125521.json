@@ -12,7 +12,11 @@
         "destination": "/index.html"
       }
     ]
-  },
+  }
+}
+
+
+"hosting": {
   "headers": [
     {
       "source": "**/*.css",
@@ -34,4 +38,3 @@
     }
   ]
 }
-
