@@ -77,7 +77,7 @@ export const booksSlice = createSlice({
     {
       id: 9,
       title: "The Great Gatsby",
-      cover: "https://techcrunch.com/wp-content/uploads/2023/05/GettyImages-1325174870.jpg?w=430&h=230&crop=1",
+      cover: "",
       isRead: false,
       author: "F. Scott Fitzgerald",
       synopsis: "Set in the Jazz Age on Long Island, The Great Gatsby tells the story of the mysterious Jay Gatsby, his lavish parties, and his obsession with the beautiful Daisy Buchanan. A tale of love, wealth, and the American Dream."
@@ -93,7 +93,7 @@ export const booksSlice = createSlice({
     {
       id: 11,
       title: "1984",
-      cover: "https://printpress.cmsmasters.net/default/wp-content/uploads/sites/11/2019/05/printpress-product-5-540x861.jpg",
+      cover: "https://example.com/book3.jpg",
       isRead: false,
       author: "George Orwell",
       synopsis: "In a dystopian future where Big Brother watches your every move, Winston Smith struggles against the oppressive regime of the Party. A chilling portrayal of surveillance, propaganda, and totalitarianism."

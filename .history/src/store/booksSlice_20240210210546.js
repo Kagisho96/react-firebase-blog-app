@@ -94,6 +94,7 @@ export const booksSlice = createSlice({
       id: 11,
       title: "1984",
       cover: "https://printpress.cmsmasters.net/default/wp-content/uploads/sites/11/2019/05/printpress-product-5-540x861.jpg",
+
       isRead: false,
       author: "George Orwell",
       synopsis: "In a dystopian future where Big Brother watches your every move, Winston Smith struggles against the oppressive regime of the Party. A chilling portrayal of surveillance, propaganda, and totalitarianism."

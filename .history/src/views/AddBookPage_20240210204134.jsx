@@ -1,6 +1,5 @@
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
 import { addBook } from "../store/booksSlice.js";
 
 function AddBookPage() {
@@ -32,12 +31,6 @@ function AddBookPage() {
     return (
       <>
         <div className="container">
-
-        <Link to="/">
-              <button className="bg-orange-400 hover:bg-gray-200 py-2 px-4 text-gray-100 hover:text-gray-900 rounded-md font-medium transition-all duration-200 ease-in">
-                  ← Back 
-              </button>
-            </Link>
 
             <form className="add-form">
             <p className="text-xl uppercase mt-6 mb-5 font-semibold text-center">

@@ -1,4 +1,3 @@
-import Header from "../components/Header.jsx";
 import Notes from "../components/Notes.jsx";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate, useParams } from "react-router-dom";
@@ -27,7 +26,7 @@ function SingleBookPage() {
     return (
       <>
         <div className="container">
-          <Header/>
+          <
             <Link to="/">
               <button className="bg-orange-400 hover:bg-gray-200 py-2 px-4 text-gray-100 hover:text-gray-900 rounded-md font-medium transition-all duration-200 ease-in">
                   ← Back 
