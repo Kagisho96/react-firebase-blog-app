@@ -46,8 +46,8 @@ function SingleBookPage() {
                     <h3 className="book-title">{ book.title }</h3>
                     <h4 className="book-author">{ book.author }</h4>
                     <p>{book.synopsis}</p>
-                    <p className="uppercase text-2x1 font-bold">like or dislike</p>
-                    <div className="">
+                    <p className="uppercase text-2x1 ">like or dislike</p>
+                    <div className="read-checkbox">
                         <input 
                           onClick={()=>{dispatch(toggleRead(book.id))}}
                           type="checkbox" 
