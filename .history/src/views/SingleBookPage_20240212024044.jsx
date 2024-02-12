@@ -52,7 +52,7 @@ function SingleBookPage() {
                           onClick={()=>{dispatch(toggleRead(book.id))}}
                           type="checkbox" 
                           defaultChecked={book.isRead} />
-                        <label>{ book.isRead ? "Dislike Blog" : "Like Blog" }</label>
+                        <label>{ book.isRead ? "Dislike Blog" : "Like " }</label>
                     </div>
                     <div onClick={()=>handleEraseBook(book.id)} className="erase-book">
                         Delete Blog
