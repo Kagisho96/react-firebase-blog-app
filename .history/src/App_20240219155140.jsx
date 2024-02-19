@@ -22,7 +22,8 @@ function App() {
         </Routes>
       </BrowserRouter>:
       <LoginPage />
-}       
+}
+        
     </>
   )
 }
