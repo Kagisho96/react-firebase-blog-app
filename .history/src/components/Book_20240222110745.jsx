@@ -37,7 +37,7 @@ function Book({ book }) {
               <i className="fa-solid fa-eye"></i>
               <span
               >
-                {book.isRead ? "Liked Post" : "Not Liked Post"}
+                {book.isRead ? "Liked Post" : " post"}
               </span>
             </button>
           </div>
