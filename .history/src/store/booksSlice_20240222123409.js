@@ -8,7 +8,7 @@ export const booksSlice = createSlice({
       title: "Hands Holding Melting Candle",
       cover:
         "https://images.pexels.com/photos/15420089/pexels-photo-15420089/free-photo-of-hands-holding-melting-candle.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load",
-      isRead: false,
+      isRead: fla,
       author: "Simon Jenkins",
       synopsis: "In this dazzling new history, bestselling author Simon Jenkins grippingly tells the story of its evolution from warring peoples to peace, wealth and freedom - a story that twists and turns from Greece and Rome, through the Dark Ages, the Reformation and the French Revolution, to the Second World War and up to the present day."
     },
@@ -43,7 +43,7 @@ export const booksSlice = createSlice({
       id: 1,
       title: "Making wearable medical devices more patient-friendly with Professor Esther Rodriguez-Villegas from Acurablebabe ",
       cover: 	"https://images.pexels.com/photos/11794227/pexels-photo-11794227.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load",
-      isRead: false,
+      isRead: true,
       author: "Darrell Etherington",
       synopsis: "Welcome back to Found, where we get the stories behind the startups. This week, our old friend Darrell Etherington joins Becca Szkutak to talk with Professor Esther Rodriguez-Villegas from Acurable..."
     },
