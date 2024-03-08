@@ -22,6 +22,7 @@ function Book({ book }) {
           )}
 
           <div className="book-cover">
+            
             <img src={book.cover} className="w-full h-full object-cover" />
 
             <button
@@ -40,17 +41,21 @@ function Book({ book }) {
                 {book.isRead ? "Liked Post" : "Not Liked Post"}
               </span>
             </button>
+
           </div>
 
           <div className="book-details">
+
             <p className="mb-2 text-gray-600">
               {" "}
               <FaUser className="mr-2 inline-flex items-center" />
               {book.author}
             </p>
+
             <h3 className="book-title mt-4 mb-2 font-bold cursor-pointer hover:text-blue-700">
               {book.title}
             </h3>
+
           </div>
         </div>
       </Link>
